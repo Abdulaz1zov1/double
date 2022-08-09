@@ -23,7 +23,8 @@ const arizaSchema = mongoose.Schema(
         study_lang: String,
         study_level: String,
         facultet: String,
-            status: {type:Boolean, default: false}
+            status: {type:Boolean, default: false},
+            date: {type: Date, default: Date.now}
     }
 )
 module.exports = mongoose.model("Ariza", arizaSchema)
