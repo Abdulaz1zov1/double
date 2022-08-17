@@ -29,7 +29,7 @@ exports.getById = async (req, res) => {
 
 exports.getAll = async (req, res) => {
     try {
-        const result = await Tolov.find({}).sort({ date: -1 })
+        const result = await Tolov.find({}).sort({ date: -1 }).populate("arizaId")
         res.status(200).json(result)
     } catch (e) {
         console.log(e, 'er')

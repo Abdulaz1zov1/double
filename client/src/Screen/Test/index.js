@@ -197,8 +197,9 @@ const Test = ({language, setUserName}) => {
                         </Form.Item>
 
                         <Form.Item name={'passport_jshir'} label={passport[language]}>
-                            <Input required/> <Button onClick={() => handleExample()}>Namuna</Button>
+                            <Input required/>
                         </Form.Item>
+                        <Button onClick={() => handleExample()}>Namuna</Button>
 
                         <Form.Item name={'passport_location'} label={passportIssued[language]}>
                             <Input required/>
@@ -219,7 +220,7 @@ const Test = ({language, setUserName}) => {
                                 <Radio value="woman">{genderWoman[language]}</Radio>
                             </Radio.Group>
                         </Form.Item>
-                        <Form.Item name={'gender'} label={'Nogirionligi bormi?'}>
+                        <Form.Item name={'nogironlik'} label={'Nogirionligi bormi?'}>
                             <Radio.Group>
                                 <Radio value="yes">{'Ha'}</Radio>
                                 <Radio value="no">{"Yo'q"}</Radio>
@@ -412,18 +413,6 @@ const Test = ({language, setUserName}) => {
                             </Select>
                         </Form.Item>
 
-                        <Form.Item rules={[
-                            {
-                                required: true,
-                                message: lang[language]
-                            },
-                        ]} name={'study_lang'} label={lang[language]}>
-                            <Select onChange={(e) => setTypeLang(e)}>
-                                <Select.Option value="rus">{lang1[language]}</Select.Option>
-                                <Select.Option value="eng">{lang2[language]}</Select.Option>
-                            </Select>
-                        </Form.Item>
-
 
                         <Form.Item rules={[
                             {
@@ -470,7 +459,27 @@ const Test = ({language, setUserName}) => {
                                 }
                             </Select>
                         </Form.Item>
-
+                        <Form.Item rules={[
+                            {
+                                required: true,
+                                message: lang[language]
+                            },
+                        ]} name={'study_lang'} label={lang[language]}>
+                            <Select onChange={(e) => setTypeLang(e)}>
+                                {
+                                    language === 0 ?
+                                        <Select.Option value={
+                                            listData[0][typeEducation]?.find(l => l.country_uz === obj?.country)?.universities?.find(u => u.name_uz === obj?.university)?.faculties?.find(p => p.name_uz === obj.faculty)?.lang_uz}>
+                                            {listData[0][typeEducation]?.find(l => l.country_uz === obj?.country)?.universities?.find(u => u.name_uz === obj?.university)?.faculties?.find(p => p.name_uz === obj.faculty)?.lang_uz}
+                                        </Select.Option>
+                                        :
+                                        <Select.Option value={
+                                            listData[0][typeEducation]?.find(l => l.country_ru === obj?.country)?.universities?.find(u => u.name_ru === obj?.university)?.faculties?.find(p => p.name_ru === obj.faculty)?.lang_ru}>
+                                            {listData[0][typeEducation]?.find(l => l.country_ru === obj?.country)?.universities?.find(u => u.name_ru === obj?.university)?.faculties?.find(p => p.name_ru === obj.faculty)?.lang_ru}
+                                        </Select.Option>
+                                }
+                            </Select>
+                        </Form.Item>
                         <Form.Item
                             wrapperCol={{offset: 8, span: 16,}}>
                             <Button className={'form-btn'} type="primary" htmlType="submit" loading={loading}>

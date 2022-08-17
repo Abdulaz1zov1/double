@@ -89,6 +89,7 @@ function SingleUser({ setUserName, language}) {
         }, 0)
     }
     const imgUploader = useRef()
+
     return (
         <div>
             {loading ? <Spin className={'small-spin'} /> :
@@ -104,7 +105,7 @@ function SingleUser({ setUserName, language}) {
                                 size={''}>
                                 <div style={{ display: 'flex' }}>
                                     <Form.Item
-                                         name="photo" 
+                                         name="photo"
                                     >
                                         {/* destroyOnClose={true} */}
                                         <Upload accept={'.pdf'}

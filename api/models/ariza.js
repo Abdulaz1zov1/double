@@ -11,6 +11,7 @@ const arizaSchema = mongoose.Schema(
         passport_location: String,
         birth_date: String,
         gender: String,
+        nogironlik: String,
         region: String,
         city: String,
         street: String,
