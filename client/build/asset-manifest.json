@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3ded75cd.css",
-    "main.js": "/static/js/main.e7ea26cb.js",
+    "main.css": "/static/css/main.10d859c5.css",
+    "main.js": "/static/js/main.a9849275.js",
     "static/js/498.4626cc55.chunk.js": "/static/js/498.4626cc55.chunk.js",
     "static/js/703.44d02dec.chunk.js": "/static/js/703.44d02dec.chunk.js",
     "static/js/142.e22ed4b2.chunk.js": "/static/js/142.e22ed4b2.chunk.js",
@@ -16,18 +16,20 @@
     "static/media/6.jpg": "/static/media/6.ccc6c857fedd52123ad4.jpg",
     "static/media/passport.jpg": "/static/media/passport.5cbfc14d47d5bc933ebf.jpg",
     "static/media/logo.png": "/static/media/logo.6158a80a4a173ad7b521.png",
+    "static/media/telegram.png": "/static/media/telegram.02c66337348721e37fa7.png",
     "static/media/student.png": "/static/media/student.ee0a5681ab5993d4f6bc.png",
     "static/media/united-kingdom (2).png": "/static/media/united-kingdom (2).7be3d5a2c15bcfba1b7c.png",
     "static/media/comand_icon.png": "/static/media/comand_icon.640689b8ac2e7c3fe50d.png",
+    "static/media/telegram.webp": "/static/media/telegram.fa3ad3d3f7d0e31b4d64.webp",
     "index.html": "/index.html",
-    "main.3ded75cd.css.map": "/static/css/main.3ded75cd.css.map",
-    "main.e7ea26cb.js.map": "/static/js/main.e7ea26cb.js.map",
+    "main.10d859c5.css.map": "/static/css/main.10d859c5.css.map",
+    "main.a9849275.js.map": "/static/js/main.a9849275.js.map",
     "498.4626cc55.chunk.js.map": "/static/js/498.4626cc55.chunk.js.map",
     "703.44d02dec.chunk.js.map": "/static/js/703.44d02dec.chunk.js.map",
     "142.e22ed4b2.chunk.js.map": "/static/js/142.e22ed4b2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ded75cd.css",
-    "static/js/main.e7ea26cb.js"
+    "static/css/main.10d859c5.css",
+    "static/js/main.a9849275.js"
   ]
 }
